@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Flex-Box</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            width: 1000px;
+            height: 1000px;
+            background-color: white;
+            margin: auto;
+        }
+
+        #title-div {
+            background-color: crimson;
+            width: inherit;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+
+        .txt {
+            margin-left: 380px;
+            font-size: 25px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+        }
+
+        .div-pic {
+            background-image: url(pics/grocery.jpg);
+            height: 250px;
+            width: inherit;
+            background-repeat: no-repeat;
+
+
+
+        }
+
+        .div-pic:hover {
+            opacity: .8;
+
+        }
+
+        .our {
+            background-color: crimson;
+        }
+
+        .parent {
+            width: inherit;
+            height: 300px;
+            background-color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: aliceblue;
+        }
+
+        .sub-div-pic1 {
+            width: inherit;
+            height: 150px;
+            background-image: url(./pics/flour.jpeg);
+            background-color: skyblue;
+
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .sub-div-pic2 {
+            width: inherit;
+            height: 150px;
+            background-image: url(./pics/jaggery.jpg);
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: aqua;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .sub-div-pic3 {
+            background-color: aqua;
+            width: inherit;
+            height: 150px;
+            background-image: url(./pics/rice.jpg);
+
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+
+        }
+
+        .sub-div-button {
+            width: inherit;
+            height: 50px;
+            ;
+            background-color:crimson;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            cursor: pointer;
+
+
+
+        }
+        .reachus{
+            width: inherit;
+            background-color: crimson;
+
+        
+            height: 400px;
+            display: flex;
+        }
+        .googlemap{
+            width: 50%;
+            height: 400px;
+            background-color: aliceblue;
+        }
+
+        
+
+        .ourprofile{
+            width: 50%;
+            height: 400px;
+            background-color:black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            
+            
+        }
+        .picturepart{
+            width: 400px;
+            height: 300px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .photo{
+            width: 200px;
+            height: inherit;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-size: contain;
+            background-repeat: no-repeat;
+
+
+        }
+        .data{
+            width: 200px;
+            height: inherit;
+            background-color: crimson;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            
+
+
+        }
+        
+
+
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="title-div">
+            <span class="txt">OnlineGrocery.com</span>
+        </div>
+        <div class="div-pic">
+        </div>
+        <div class="our">
+            <span class="txt">Our Products</span>
+        </div>
+
+
+        <div class="parent">
+            <div class="child">
+                <div class="sub-div-pic1">
+
+
+
+                </div>
+                <div class="sub-div-button">
+                    <input type="button" value="Organic Flour">
+
+                </div>
+            </div>
+
+            <div class="child">
+                <div class="sub-div-pic2">
+
+
+
+                </div>
+                <div class="sub-div-button">
+                    <input type="button" value="Organic Jaggery">
+
+                </div>
+            </div>
+
+            <div class="child">
+                <div class="sub-div-pic3">
+
+
+                </div>
+                <div class="sub-div-button">
+                    <input type="button" value="Rice">
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="our">
+            <span class="txt">Reach Us</span>
+        </div>
+        <div class="reachus">
+            <div class="googlemap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13791.522932618522!2d74.9523281!3d30.2119513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a0d6293513f98ce!2sBanglore%20Computer%20Education!5e0!3m2!1sen!2sin!4v1651406060310!5m2!1sen!2sin" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+            </div>
+            <div class="ourprofile">
+                <div class="picturepart">
+                    <div class="photo">
+                        <img src="pics/arsh2.jpg" height="300" width="200" alt="">
+
+                    </div>
+                    <div class="data">
+                        <p><font size="4">Name:Arsh Kumar</font></p>
+                        <p><font size="4">Email:arsh0268@chitkara</font></p>
+                        <p><font size="4">Mobile no:98779-86524</font></p>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+    
+            </div>
+    
+    
+        </div>
+    
+        </div>
+
+    </div>
+
+
+    
+</body>
+
+</html>
