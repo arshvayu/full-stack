@@ -70,10 +70,10 @@
             background-color: aliceblue;
         }
 
-        .sub-div-pic1 {
+        .sub-div-pic {
             width: inherit;
             height: 150px;
-            background-image: url(./pics/flour.jpeg);
+            
             background-color: skyblue;
 
             background-size: contain;
@@ -85,36 +85,9 @@
 
         }
 
-        .sub-div-pic2 {
-            width: inherit;
-            height: 150px;
-            background-image: url(./pics/jaggery.jpg);
+    
 
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-color: aqua;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-        }
-
-        .sub-div-pic3 {
-            background-color: aqua;
-            width: inherit;
-            height: 150px;
-            background-image: url(./pics/rice.jpg);
-
-            background-size: contain;
-            background-repeat: no-repeat;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-
-
-        }
+        
 
         .sub-div-button {
             width: inherit;
@@ -218,36 +191,40 @@
 
         <div class="parent">
             <div class="child">
-                <div class="sub-div-pic1">
+                <div class="sub-div-pic">
+                    <img src="pics/flour.jpeg" height="200" width="200" alt="">
+
 
 
 
                 </div>
                 <div class="sub-div-button">
-                    <input type="button" value="Organic Flour">
+                    <input type="button" value="Organic Flour" style="cursor: pointer; background-color: black; color: white;">
+                    
+                </div>
+            </div>
+
+            <div class="child">
+                <div class="sub-div-pic">
+                    <img src="pics/jaggery.jpg" height="150" width="200" alt="">
+
+
+
+                </div>
+                <div class="sub-div-button">
+                    <input type="button" value="Organic Jaggery" style="cursor: pointer; background-color: black; color: white;">
 
                 </div>
             </div>
 
             <div class="child">
-                <div class="sub-div-pic2">
-
-
-
-                </div>
-                <div class="sub-div-button">
-                    <input type="button" value="Organic Jaggery">
-
-                </div>
-            </div>
-
-            <div class="child">
-                <div class="sub-div-pic3">
+                <div class="sub-div-pic">
+                    <img src="pics/rice.jpg" height="200" width="200" alt="">
 
 
                 </div>
                 <div class="sub-div-button">
-                    <input type="button" value="Rice">
+                    <input type="button" value="Rice" style="cursor: pointer; background-color: black; color: white;">
 
                 </div>
             </div>
