@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function doClear()
+        {
+            document.getElementById("main").value="";
+
+        }
+        function view(num)
+        {
+            document.getElementById("main").value+=num;
+        }
+        function doPlus()
+        {
+            var sum=document.getElementById("main").value;
+            var sum1=eval(sum);
+            document.getElementById("main").value=sum1;
+        }
+        function doRemove()
+        {
+            var exp=document.getElementById("main").value;
+            exp=exp.substr(0,exp.length-1);
+            document.getElementById("main").value=exp;
+        }
+    </script>
+   
+
+</head>
+<body style="padding-top: 80px; background-color: cadetblue;"  >
+    <center>
+        <table rules="all"   style="background-color: rgb(60, 56, 56); border: 2px solid black;  height: 450px; width: 400px; ;  ">
+            <tr>
+                <th colspan="3">
+                    <input type="text" id="main" style="width: 250px; height: 25px; border-radius: 6px; " disabled>
+                    <input type="button" value="Back" onclick="doRemove();" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"
+                    
+                </th>
+                <th><input type="button" value="clear" onclick="doClear();" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"  ></th>
+            </tr>
+            <tr>
+                
+                    <th><input type="button" value="1" onclick="view('1');"  style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="2" onclick="view('2');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="3" onclick="view('3');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="+" onclick="view('+');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" value="4" onclick="view('4');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="5" onclick="view('5');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="6" onclick="view('6');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="-" onclick="view('-');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" value="7" onclick="view('7');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="8" onclick="view('8');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="9" onclick="view('9');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="*" onclick="view('*');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                </tr>
+                <tr>
+                    <th><input type="button" value="0" onclick="view('0');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="." onclick="view('.');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="00" onclick="view('00');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="/" onclick="view('/');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                </tr>
+                <tr>
+                    
+                    <th colspan="3"><input type="button" value="=" onclick="doPlus();" style="width: 250px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    <th><input type="button" value="%" onclick="view('%');" style="width: 60px; height: 60px; background-color: black; color: white; border-radius: 6px;"></th>
+                    
+        
+                </tr>
+        </table>
+    </center>
+</body>
+</html>
